@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -90,7 +93,22 @@
       </section>
       <section>
         <h2>Записаться</h2>
-        <!--Здесь будет форма-->
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label>Дата
+            <input type="text" name="date" placeholder="08.10.2017">
+          </label>
+          <label>Время
+            <input type="text" name="time" placeholder="10:00">
+          </label>
+          <label>Ваше имя
+            <input type="text" name="your name" placeholder="Борода">
+          </label>
+          <label>Телефон
+            <input type="text" name="phone" placeholder="+71234567890">
+          </label>
+          <input type="submit" name="submit" value="Отправить">
+        </form>
       </section>
     </main>
     <footer>

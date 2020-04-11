@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Прайс-лист Барбершопа</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -21,7 +24,47 @@
       </nav>
     </header>
     <main>
-      
+      <h1>Средства для ухода</h1>
+      <ul>
+        <li><a>Главная</a></li>
+        <li><a>Магазин</a></li>
+        <li><a>Средства для ухода</a></li>
+      </ul>
+      <h2>Сортировка товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <fildset>
+          <legend>Производители</legend>
+          <label>Baxter of california
+            <input type="checkbox" name="Baxter of california" value="Baxter of california">
+          </label>
+          <label>Mr Natty
+            <input type="checkbox" name="Mr Natty" value="Mr Natty">
+          </label>
+          <label>Suavecito
+            <input type="checkbox" name="Suavecito" value="Suavecito">
+          </label>
+          <label>Malin+Goetz
+            <input type="checkbox" name="Malin+Goetz" value="Malin+Goetz">
+          </label>
+          <label>Murray's
+            <input type="checkbox" name="Murray's" value="Murray's">
+          </label>
+          <label>American Crew
+            <input type="checkbox" name="American Crew" value="American Crew">
+          </label>
+          <legend>Группы товаров</legend>
+          <label> Бритвенные принадлежности
+            <input type="radio" name="group-of-product" value="shaving-accessories">
+          </label>
+          <label>Средства для ухода
+            <input type="radio" name="group-of-product" value="care-products">
+          </label>
+          <label>Аксессуары
+            <input type="radio" name="group-of-product" value="accessories">
+          </label>
+        </fildset>
+        <input type="submit" name="submit" value="Показать">
+      </form>
     </main>
     <footer>
 
