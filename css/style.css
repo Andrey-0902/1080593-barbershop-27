@@ -19,6 +19,35 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font: inherit;
+
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  
+  background-color: #000000;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0000);
+  overflow: hidden;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -67,6 +96,105 @@ a {
   text-transform: none;
 }
 
-.button {
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid white;
+}
+
+.register-item input {
   font: inherit;
+
+  color: #000000;
+  opacity: 0.7;
+
+  border: 2px solid #000101;
+  background-color: transparent;
+}
+
+.register-item input:focus {
+  border-color: #663d15;
+}
+
+.main-footer {
+  background-color: #000000;
+  background-image: url(../img/bg-footer.png);
+  background-repeat: repeat;
+}
+
+.footer-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.footer-info a:hover,
+.footer-info a:focus {
+  text-decoration: none;
+}
+
+.social {
+  text-align: center;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list a {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.modal-login {
+  background-color: white;
+  background-image: url(../img/bg-white.png);
+  background-repeat: repeat;
+
+  color: #000000;
+}
+
+.modal-login h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-login input {
+  font: inherit;
+
+  color: black;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #000101;
+}
+
+.modal-login a {
+  color: black;
+  text-decoration: underline;
+}
+
+.modal-login a:hover,
+.modal-login a:focus {
+  text-decoration: none;
+}
+
+.modal-map {
+  background-color: white;
+  background-image: url(../img/bg-white.png);
+}
+
+.modal-map h2 {
+  font-size: 30px;
+  line-height: 42px;
+
+  color: #000000;
 }

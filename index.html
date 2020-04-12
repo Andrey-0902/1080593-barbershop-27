@@ -24,9 +24,9 @@
       </nav>
     </header>
     <main>
-      <h1 class="visuali-hidden">Барбершоп "Бородинский"</h1>
+      <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
       <section class="features">
-        <h2 class="visuali-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li>
             <h3>Быстро</h3>
@@ -67,12 +67,12 @@
               <time datetime="2020.01.18">18 января</time>
             </li>
           </ul>
-          <a href="#">ВСЕ НОВОСТИ</a>
+          <a class="button" href="#">ВСЕ НОВОСТИ</a>
         </section>
         <section class="gallery">
           <h2>Фотогалерея</h2>
-          <figure>
-            <img src="img/fotogallery.jpg" width="328" height="164" alt="Интерьер">
+          <figure class="gallery-content">
+            <a href="#"><img src="img/fotogallery.jpg" width="328" height="164" alt="Интерьер"></a>
           </figure>
           <button class="button" type="button">Назад</button>
           <button class="button" type="button">Вперед</button>
@@ -98,38 +98,75 @@
           <h2>Записаться</h2>
           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
           <form action="https://echo.htmlacademy.ru" method="POST">
-            <label>Дата
+            <p class="register-item">
+              <label>Дата
               <input type="text" name="date" placeholder="08.10.2017">
-            </label>
-            <label>Время
+             </label>
+            </p>
+            <p class="register-item">
+              <label>Время
               <input type="text" name="time" placeholder="10:00">
-            </label>
-            <label>Ваше имя
+              </label>
+            </p>
+            <p class="register-item">
+             <label>Ваше им
               <input type="text" name="your name" placeholder="Борода">
-            </label>
-            <label>Телефон
+              </label>
+            </p>
+            <p class="register-item">
+             <label>Телефон
               <input type="text" name="phone" placeholder="+71234567890">
-            </label>
-            <input type="submit" name="submit" value="Отправить" class="button">
+              </label>
+            </p>
+            <button class="button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
     </main>
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <p class="footer-info">
         БАРБЕРШОП «БОРОДИНСКИЙ»<br>
         АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-        КАК НАС НАЙТИ?<br>
+        <a href="#">КАК НАС НАЙТИ?</a><br>
         ТЕЛЕФОН: +7 (495) 666-02-66
       </p>
-      <p>Давайте дружить!</p>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграмм</a></li>
-      </ul>
-      <p>Разработано:</p>
-      <a href="#">html academy</a>
+      <div class="social">
+        <p>Давайте дружить!</p>
+        <ul class="social-list">
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграмм</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Разработано:</p>
+        <a class="button" href="#">html academy</a>
+      </div>
     </footer>
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="visually-hidden" for="login">Логин</label>
+          <input type="text" name="login" id="login" value="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input type="text" name="password" id="password" value="Пароль">
+        </p>
+        <p>
+          <input type="checkbox" name="save-me" value="save-me" id="save-me" checked>
+          <label for="save-me">Запомните меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <h2>Как до нас добраться:</h2>
+      <p><button>Закрыть</button></p>
+      <img src="img/map.png" width="766" height="561" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19">
+    </section>
   </body>
 </html>
