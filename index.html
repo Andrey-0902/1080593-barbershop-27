@@ -11,25 +11,25 @@
     <header>
       <nav>
         <a><img src="img/index-logo.png" width="371" height="155" alt="Логотип Барбершопа Бородинского"></a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li><a href=#>Вход</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Барбершоп "Бородинский"</h1>
-      <section>
-        <h2>Преимущества</h2>
-        <ul>
+      <h1 class="visuali-hidden">Барбершоп "Бородинский"</h1>
+      <section class="features">
+        <h2 class="visuali-hidden">Преимущества</h2>
+        <ul class="features-list">
           <li>
-            <p>Быстро</p>
+            <h3>Быстро</h3>
             <p>
               МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА
               ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ
@@ -37,7 +37,7 @@
             </p>
           </li>
           <li>
-            <p>Круто</p>
+            <h3>Круто</h3>
             <p>
               ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
               МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
@@ -45,7 +45,7 @@
             </p>
           </li>
           <li>
-            <p>Дорого</p>
+            <h3>Дорого</h3>
             <p>
               НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И
               НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА
@@ -54,62 +54,66 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Новости</h2>
-        <ul>
-          <li>
-            <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-            <time datetime="2020.01.11">11 января</time>
-          </li>
-          <li>
-            <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-            <time datetime="2020.01.18">18 января</time>
-          </li>
-        </ul>
-        <a href="#">ВСЕ НОВОСТИ</a>
-      </section>
-      <section>
-        <h2>Фотогалерея</h2>
-        <figure>
-          <img src="img/fotogallery.jpg" width="328" height="164" alt="Интерьер">
-        </figure>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
-      </section>
-      <section>
-        <h2>Контактная Информация</h2>
-        <p>
-          БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-          ТЕЛЕФОН: +7 (495) 666-02-66
-        </p>
-        <p>
-          ВРЕМЯ РАБОТЫ:<br>
-          ПН—ПТ: С 10:00 ДО 22:00<br>
-          СБ—ВС: С 10:00 ДО 19:00
-        </p>
-        <a href="#">Как проехать</a>
-        <a href="#">Обратная связь</a>
-      </section>
-      <section>
-        <h2>Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <label>Дата
-            <input type="text" name="date" placeholder="08.10.2017">
-          </label>
-          <label>Время
-            <input type="text" name="time" placeholder="10:00">
-          </label>
-          <label>Ваше имя
-            <input type="text" name="your name" placeholder="Борода">
-          </label>
-          <label>Телефон
-            <input type="text" name="phone" placeholder="+71234567890">
-          </label>
-          <input type="submit" name="submit" value="Отправить">
-        </form>
-      </section>
+      <div class="index-columns">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li>
+              <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+              <time datetime="2020.01.11">11 января</time>
+            </li>
+            <li>
+              <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+              <time datetime="2020.01.18">18 января</time>
+            </li>
+          </ul>
+          <a href="#">ВСЕ НОВОСТИ</a>
+        </section>
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <figure>
+            <img src="img/fotogallery.jpg" width="328" height="164" alt="Интерьер">
+          </figure>
+          <button class="button" type="button">Назад</button>
+          <button class="button" type="button">Вперед</button>
+        </section>
+      </div>
+      <div class="index-columns">
+        <section class="info">
+          <h2>Контактная Информация</h2>
+          <p>
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
+          </p>
+          <p>
+            ВРЕМЯ РАБОТЫ:<br>
+            ПН—ПТ: С 10:00 ДО 22:00<br>
+            СБ—ВС: С 10:00 ДО 19:00
+          </p>
+          <a href="#" class="button">Как проехать</a>
+          <a href="#" class="button">Обратная связь</a>
+        </section>
+        <section class="register">
+          <h2>Записаться</h2>
+          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label>Дата
+              <input type="text" name="date" placeholder="08.10.2017">
+            </label>
+            <label>Время
+              <input type="text" name="time" placeholder="10:00">
+            </label>
+            <label>Ваше имя
+              <input type="text" name="your name" placeholder="Борода">
+            </label>
+            <label>Телефон
+              <input type="text" name="phone" placeholder="+71234567890">
+            </label>
+            <input type="submit" name="submit" value="Отправить" class="button">
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       <p>
